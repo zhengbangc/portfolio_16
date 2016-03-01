@@ -22,7 +22,8 @@ We recommend you to use the following project structure:
 + For styling, you can use the scss files in `scss` folder like you did in MP 1 or write a css file or borrow css/scss from elsewhere (such as from Foundation). In short, we are not grading for style for this MP.
 
 
-Also, here is a list of angular components that you might find useful
+Also, here is a list of angular components that you might find useful. *Please note:
+we are using Angular version 1.3.13, so please read the appropriate docs*
 
 * [ngApp](https://docs.angularjs.org/api/ng/directive/ngApp)
 + [ngController](https://docs.angularjs.org/api/ng/directive/ngController)
