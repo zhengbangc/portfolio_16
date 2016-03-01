@@ -16,14 +16,14 @@ You can see a demo of a sample app in [this video](https://www.youtube.com/watch
 
 We recommend you to use the following project structure:
 
-1. The main HTML file for this app should be `public/index.html`, *but you should not need to touch this file*.
+1. The main HTML file for this app should be `public/index.html`, **but you should not need to touch this file**.
 + Your app has three main views (one for the list, one for the gallery and the other for displaying the details of a particuar movie). These should be implemented using three different [Angular routing and partial templates](https://docs.angularjs.org/tutorial/step_07). You can implement them in the three files in `public/partials`
 + Your Angular code should go in `js/app.js` except for the controllers. The controllers should be in `js/controllers.js`. This keeps your code organized.
 + For styling, you can use the scss files in `scss` folder like you did in MP 1 or write a css file or borrow css/scss from elsewhere (such as from Foundation). In short, we are not grading for style for this MP.
 
 
-Also, here is a list of angular components that you might find useful. *Please note:
-we are using Angular version 1.3.13, so please read the appropriate docs*
+Also, here is a list of angular components that you might find useful. **Please note:
+we are using Angular version 1.3.13, so please read the appropriate docs**
 
 * [ngApp](https://docs.angularjs.org/api/ng/directive/ngApp)
 + [ngController](https://docs.angularjs.org/api/ng/directive/ngController)
