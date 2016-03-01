@@ -1,6 +1,6 @@
 {
   "name": "mp3",
-  "version": "1.0",
+  "version": "2.0",
   "homepage": "https://github.com/uiuc-web-programming/mp3",
   "authors": [
     "biplabdeka <biplab.deka@gmail.com>",
@@ -17,7 +17,6 @@
   "dependencies": {
     "jquery-2.1.3.min": "http://code.jquery.com/jquery-2.1.3.min.js",
     "angular": "~1.3.13",
-    "angular-route": "~1.3.14",
-    "angular-animate": "~1.3.14"
+    "angular-route": "~1.3.14"
   }
 }
