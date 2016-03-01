@@ -3,7 +3,7 @@
 ### AngularJS Front-End Design
 Goal: Create a single-page AngularJS app that lets users interact with the data from the [IMDB top 250 movies](http://www.imdb.com/chart/top). We've already crawled the data and formatted it as JSON: `public/data/imdb250.json`. We also downloaded the corresponding poster images for each movie: `public/data/images`. The images are named using the `imdbID` for each movies.
 
-Your app should have the following features:
+__Requirements and Features__:
 
 1. A list view where users can input a search query and the app returns a list of movies that match the query. There should also be a way to sort the search results based on different properties of the results (such as the name or rank) and of specifying an ordering (ascending and descending). Also, the search bar should filter as you type.
 + A gallery view that displays the movie posters for all the movies. There should be a way to select movies from different genres in the gallery.
@@ -14,7 +14,7 @@ Your app should have the following features:
 
 You can see a demo of a sample app in [this video](https://www.youtube.com/watch?v=_xZYYViPvig).
 
-We recommend you to use the following project structure:
+__Files__:
 
 1. The main HTML file for this app should be `public/index.html`, **but you should not need to touch this file**.
 + Your app has three main views (one for the list, one for the gallery and the other for displaying the details of a particuar movie). These should be implemented using three different [Angular routing and partial templates](https://docs.angularjs.org/tutorial/step_07). You can implement them in the three files in `public/partials`
