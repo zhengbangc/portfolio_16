@@ -34,4 +34,4 @@ we are using Angular version 1.3.13, so please read the appropriate docs**
 + [$http](https://docs.angularjs.org/api/ng/service/$http)
 + [ngSrc](https://docs.angularjs.org/api/ng/directive/ngSrc)
 
-For the complete list, please refer to the [Angular documentation](https://docs.angularjs.org/api/ng).
+For the complete list, please refer to the [Angular documentation](https://code.angularjs.org/1.3.3/docs/api/ng).
