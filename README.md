@@ -17,6 +17,7 @@ You can see a demo of a sample app in [this video](https://www.youtube.com/watch
 __Files__:
 
 1. The main HTML file for this app should be `public/index.html`, **but you should not need to touch this file**.
+The line of code `<div ng-view></div>` in the index.html inserts a partial into that div. It is up to you to set up the routing in your JS file.
 + Your app has three main views (one for the list, one for the gallery and the other for displaying the details of a particuar movie). These should be implemented using three different [Angular routing and partial templates](https://docs.angularjs.org/tutorial/step_07). You can implement them in the three files in `public/partials`
 + Your Angular code should go in `js/app.js` except for the controllers. The controllers should be in `js/controllers.js`. This keeps your code organized.
 + For styling, you can use the scss files in `scss` folder like you did in MP 1 or write a css file or borrow css/scss from elsewhere (such as from Foundation). In short, we are not grading for style for this MP.
