@@ -33,7 +33,6 @@ __Requirements and Features__:
 1. A list view where users can input a search query and the app returns a list of movies that match the query. There should also be a way to sort the search results based on different properties of the results (such as the name or rank) and of specifying an ordering (ascending and descending). Also, the search bar should filter as you type.
 + A gallery view that displays the movie posters for all the movies. There should be a way to select movies from different genres in the gallery.
 + When an item in search view or the gallery view is clicked, the app should display the different attributes of the selected movie (from the JSON file). Also, this view should have previous and next buttons (can be implemented with arrows) that lets the user cycle through the list of movies.
-+ You app should use animations wherever appropriate (at least once).
 + You should use partials
 + You are free to use Foundation's components (such as the grid etc.) for this part as long as it is used for styling and not used to implement the core functionality of the app.
 
