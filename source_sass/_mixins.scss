@@ -1,1 +1,39 @@
-// Insert your mixins
+@mixin translateY($y){
+	-ms-transform: translateY($y);
+   	-webkit-transform: translateY($y);
+    transform: translateY($y);
+}
+
+@mixin translateX($x){
+	-ms-transform: translateX($x);
+   	-webkit-transform: translateX($x);
+    transform: translateX($x);
+}
+
+@mixin transition($transition) {
+	transition: $transition;
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-o-transition: $transition;
+}
+
+@mixin transform-rotate($deg){
+	-webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+@mixin filter_blur($px){
+	-webkit-filter: blur($px);
+	-moz-filter: blur($px);
+	-o-filter: blur($px);
+	-ms-filter: blur($px);
+	filter: blur($px);
+}
+
+@mixin scale($scaleX, $scaleY){
+	 -ms-transform: scale($scaleX, $scaleY); /* IE 9 */
+    -webkit-transform: scale($scaleX, $scaleY); /* Safari */
+    transform: scale($scaleX, $scaleY);
+}
