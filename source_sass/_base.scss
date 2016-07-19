@@ -428,7 +428,7 @@ $openSans: 'Open Sans', serif;
 				&:hover {
 					@include box-shadow();
 					.project_desc {
-						opacity: 1;
+						// opacity: 1;
 					}
 				}
 				.project_desc {
