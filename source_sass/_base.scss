@@ -425,10 +425,10 @@ $openSans: 'Open Sans', serif;
 				overflow: hidden;
 				position: relative;
 				@include transition(box-shadow 0.4s ease-in-out);
-				&:hover {
+				&:hover, &:focus {
 					@include box-shadow();
 					.project_desc {
-						// opacity: 1;
+						opacity: 1;
 					}
 				}
 				.project_desc {
