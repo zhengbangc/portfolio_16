@@ -427,13 +427,13 @@ $openSans: 'Open Sans', serif;
 				@include transition(box-shadow 0.4s ease-in-out);
 				&:hover {
 					@include box-shadow();
+					.project_desc {
+						opacity: 1;
+					}
 				}
 				.project_desc {
 					opacity: 0;
 					@include transition(opacity 0.35s ease-in-out);
-					&:hover {
-						opacity: 1;
-					}
 					position: absolute;	
 					bottom: 0;
 					height: 100%;
