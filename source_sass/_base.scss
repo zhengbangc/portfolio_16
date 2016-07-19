@@ -4,7 +4,10 @@ $openSans: 'Open Sans', serif;
 
 .contactme{
 	width: 100vw;
-	margin-top: 60px;
+	margin-top: 40px;
+	@include breakpoint(large) {
+		margin-top: 60px;		
+	}
 	padding-bottom: 20px;
 	font-family: $openSans;
 	font-weight: 300;
@@ -54,7 +57,7 @@ $openSans: 'Open Sans', serif;
 		@include breakpoint(small){
 			width: 20vw;
 		}
-		@include breakpoint(large){
+		@include breakpoint(medium){
 			width: 8vw;
 		}
 	}
@@ -425,10 +428,15 @@ $openSans: 'Open Sans', serif;
 				overflow: hidden;
 				position: relative;
 				@include transition(box-shadow 0.4s ease-in-out);
-				&:hover, &:focus {
+				&:hover {
 					@include box-shadow();
 					.project_desc {
 						opacity: 1;
+					}
+				}
+				@include breakpoint(small only) {
+					img {
+						@include filter_blur(1.5px);
 					}
 				}
 				.project_desc {
@@ -440,6 +448,11 @@ $openSans: 'Open Sans', serif;
 					height: 100%;
 					width: 100%;
 					background-color: rgba(0, 0, 0, 0.80);
+					@include breakpoint (small only) {
+						opacity: 1;
+						background-color: rgba(0, 0, 0, 0.55);
+
+					}
 					.project_desc_container {
 						position: absolute;
 						width: 80%;
@@ -453,7 +466,9 @@ $openSans: 'Open Sans', serif;
 							font-family: $openSans;
 							color: #C5B358;
 							@include breakpoint(small only) {
-								font-size: 25px;
+								font-size: 30px;
+								font-weight: 600;
+								color: #cfc17d;
 							}
 						}
 						p {
@@ -463,6 +478,11 @@ $openSans: 'Open Sans', serif;
 							margin-bottom: 8px;
 							@include breakpoint(small only) {
 								font-size: 18px;
+								display: none;
+							}
+							@include breakpoint(medium only) {
+								font-size: 18px;
+								display: none;
 							}
 						}
 						a {
@@ -472,6 +492,10 @@ $openSans: 'Open Sans', serif;
 							}
 							@include breakpoint(small only) {
 								font-size: 20px;
+								color: white;
+								&:visited {
+									color: white;
+								}
 							}
 							border-bottom: dotted 1px #aeaeae;
 						}
