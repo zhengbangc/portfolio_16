@@ -6,3 +6,7 @@ app.use(express.static(__dirname + '/public'));
 var port = process.env.PORT || 3000;
 console.log("Express server running on " + port);
 app.listen(process.env.PORT || port);
+
+app.route('/*').get(function(req, res) { 
+    res.sendFile('index.html', { root: __dirname + '/public' });
+});

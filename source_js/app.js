@@ -1,12 +1,12 @@
 var app = angular.module('mp4', ['ngRoute', 'mp4Controllers', 'mp4Services']);
 
-app.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   $routeProvider.
   when('/', {
     templateUrl: 'partials/home.html',
     controller: 'homeController'
   }).
-  when('/apps',{
+  when('/apps', {
     templateUrl: 'partials/apps.html',
     controller: 'appsController'
   }).
