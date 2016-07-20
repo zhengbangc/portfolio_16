@@ -284,15 +284,13 @@ $openSans: 'Open Sans', serif;
 						@include scale(1.03, 1.03);
 						@include transition(all 0.25s ease-out);
 						.thumb_nail_container {
+							background-color: rgba(0,0,0, 0.8);
 							h5{
 								color: #C5B358;
 							}
 							p{
 								@include transition(all 0.4s ease-in-out);
 								opacity: 1;
-							}
-							.background-img{
-								background-color: rgba(0,0,0, 0.7);
 							}
 						}
 					}
@@ -360,18 +358,20 @@ $openSans: 'Open Sans', serif;
 					}
 				}
 				&:nth-child(4){
+					cursor: default;
 					.thumb_nail_container {
 						background-image: url('../data/images/work_writings.png');
 					}
 				}
 				&:nth-child(5){
+					cursor: default;
 					.thumb_nail_container {
 						background-image: url('../data/images/cestlavie.png');
 					}
 				}
 				&:nth-child(6){
 					.thumb_nail_container {
-						background-image: url('../data/images/bonvoyage.png');
+						background-image: url('../data/images/work_montage.png');
 					}
 				}
 			}
