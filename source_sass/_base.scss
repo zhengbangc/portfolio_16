@@ -139,9 +139,9 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 				@include linear-gradient-background-small();	
 			}
 			@include breakpoint (medium) {
+				will-change: transform;
 				@include linear-gradient-background();	
 			}
-			will-change: transform;
 			z-index: -1;		
 		}
 		.intro_container {
