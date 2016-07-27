@@ -68,7 +68,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 	nav {
 		@include breakpoint (small only) {
 			position: fixed;
-			height: 45px;
+			height: 55px;
 			z-index: 4;
 			bottom: 0;
 			@include transition(all 0.5s ease-in-out);
@@ -91,7 +91,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 		font-size: 25px;
 		font-weight: 300;
 		a {
-			line-height: 45px;
+			line-height: 55px;
 			color: white;
 			letter-spacing: 2px;
 			&:visited {

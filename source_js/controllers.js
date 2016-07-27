@@ -80,11 +80,11 @@ mp4Controllers.controller('homeController', ['$scope' , '$window' , function($sc
   }, 600);
 
   $(document).scroll(function(){
-    if($(document).scrollTop() >= 45 && $('nav').offset().top < $('.contactme').offset().top) {
+    if($(document).scrollTop() >= 55 && $('nav').offset().top < $('.contactme').offset().top) {
       $('nav').addClass('background_blur');
     }
 
-    if($(document).scrollTop() < 45) {
+    if($(document).scrollTop() < 55) {
       $('nav').removeClass('background_blur');
     }
   })
