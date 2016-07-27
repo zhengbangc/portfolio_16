@@ -70,8 +70,7 @@ mp4Controllers.controller('homeController', ['$scope' , '$window' , function($sc
   $("nav a").click(function(){
       $root.animate({
          scrollTop: $( $.attr(this, 'href')).offset().top
-      },500);
-      return false;
+      }, 300);
   });
 
   $(".intro_container").animate({
