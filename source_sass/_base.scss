@@ -263,8 +263,8 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 				list-style: none;
 				max-width: 400px;
 				@include breakpoint(small only) {
-					padding: 0 20px;
-					margin: 0;
+					width: 330px;
+					margin: auto;
 				}
 				@include breakpoint(medium only) {
 					margin: auto;
@@ -362,7 +362,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 			h2 {
 				font-family: 'Lemon Milk';
 				text-align: center;
-				font-size: 45px;
+				font-size: 40px;
 				font-weight: 400;
 				color: #C5B358;
 			}
