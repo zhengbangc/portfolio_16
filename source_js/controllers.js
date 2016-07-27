@@ -80,18 +80,12 @@ mp4Controllers.controller('homeController', ['$scope' , '$window' , function($sc
   }, 600);
 
   $(document).scroll(function(){
-    // console.log($(document).scrollTop());
-    // console.log($('nav').offset().top);
     if($(document).scrollTop() >= 30 && $('nav').offset().top < $('.contactme').offset().top) {
-      $('nav').addClass('background_solid');
+      $('nav').addClass('background_blur');
     }
-    // if ($('nav').offset().top >= $('.contactme').offset().top  ) {
-    //   $('nav').addClass('hidden');
-    // } else {
-    //   $('nav').removeClass('hidden');
-    // }
+
     if($(document).scrollTop() < 30) {
-      $('nav').removeClass('background_solid');
+      $('nav').removeClass('background_blur');
     }
   })
 
