@@ -85,11 +85,11 @@ mp4Controllers.controller('homeController', ['$scope' , '$window' , function($sc
     if($(document).scrollTop() >= 30 && $('nav').offset().top < $('.contactme').offset().top) {
       $('nav').addClass('background_solid');
     }
-    if ($('nav').offset().top >= $('.contactme').offset().top  ) {
-      $('nav').addClass('hidden');
-    } else {
-      $('nav').removeClass('hidden');
-    }
+    // if ($('nav').offset().top >= $('.contactme').offset().top  ) {
+    //   $('nav').addClass('hidden');
+    // } else {
+    //   $('nav').removeClass('hidden');
+    // }
     if($(document).scrollTop() < 30) {
       $('nav').removeClass('background_solid');
     }
