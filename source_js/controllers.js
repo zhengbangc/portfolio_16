@@ -1,6 +1,6 @@
-var mp4Controllers = angular.module('mp4Controllers', []);
+var mp4Controllers = angular.module('mp4Controllers', ['duScroll']);
 
-mp4Controllers.controller('homeController', ['$scope' , '$window' , function($scope, $window) {
+mp4Controllers.controller('homeController', ['$scope' , '$window', '$document', function($scope, $window, $document) {
   $('.experience ul li').click(function(){
      var selection = window.getSelection();
     if(selection.toString().length === 0){
@@ -35,10 +35,8 @@ mp4Controllers.controller('homeController', ['$scope' , '$window' , function($sc
     return false;
   });
 
-  var appear_flag = 0;
   $(window).scroll(function(){
-    if($(window).scrollTop() >= ($('.myworks').offset().top - 150) && appear_flag === 0){
-      appear_flag = 1;
+    if($(window).scrollTop() >= ($('.myworks').offset().top - 150)){
       $('.thumb_nail:nth-child(1)').addClass('appear');
       setTimeout(function(){$('.thumb_nail:nth-child(2)').addClass('appear');},300);
       setTimeout(function(){$('.thumb_nail:nth-child(3)').addClass('appear');},600);
@@ -68,12 +66,16 @@ mp4Controllers.controller('homeController', ['$scope' , '$window' , function($sc
     }, 2400);
   });
 
-  var $root = $('html, body');
-  $("nav a").click(function(){
-      $root.animate({
-         scrollTop: $( $.attr(this, 'href')).offset().top
-      }, 600);
-  });
+  // var $root = $('html, body');
+  // $("nav a").click(function(){
+  //   // $document.scrollTopAnimated(400);
+  //     // $root.animate({
+  //        // scrollTop: $( $.attr(this, 'href')).offset().top
+  //     // }, 600);
+  // });
+
+  
+
 
   $(".intro_container").animate({
     opacity: '1',
