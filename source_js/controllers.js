@@ -35,8 +35,10 @@ mp4Controllers.controller('homeController', ['$scope' , '$window' , function($sc
     return false;
   });
 
+  var appear_flag = 0;
   $(window).scroll(function(){
-    if($(window).scrollTop() >= ($('.myworks').offset().top - 150)){
+    if($(window).scrollTop() >= ($('.myworks').offset().top - 150) && appear_flag === 0){
+      appear_flag = 1;
       $('.thumb_nail:nth-child(1)').addClass('appear');
       setTimeout(function(){$('.thumb_nail:nth-child(2)').addClass('appear');},300);
       setTimeout(function(){$('.thumb_nail:nth-child(3)').addClass('appear');},600);
