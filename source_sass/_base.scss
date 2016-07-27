@@ -139,7 +139,12 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 			height: 100%;
 			top: 0;
 			left: 0;
-			@include linear-gradient-background();	
+			@include breakpoint (small only) {
+				@include linear-gradient-background-small();	
+			}
+			@include breakpoint (medium) {
+				@include linear-gradient-background();	
+			}
 			will-change: transform;
 			z-index: -1;		
 		}
