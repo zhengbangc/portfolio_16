@@ -69,4 +69,5 @@
     background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../data/images/fixed-background-small.jpg') no-repeat; /* Standard syntax */
 	background-position: center center;
 	background-size: cover;
+	background-attachment: scroll;
 }
