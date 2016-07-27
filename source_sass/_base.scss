@@ -8,12 +8,8 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 .contactme{
 	width: 100vw;
 	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 45px;
 	background-color: white;
-	@include breakpoint(large) {
-		padding-top: 60px;		
-	}
-	padding-bottom: 20px;
 	font-family: $openSans;
 	font-weight: 300;
 	line-height: 35px;
