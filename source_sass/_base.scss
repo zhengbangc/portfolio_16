@@ -72,8 +72,8 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 			z-index: 4;
 			bottom: 0;
 			@include transition(all 0.5s ease-in-out);
-			-webkit-backdrop-filter: blur(4px);
 			&.background_blur {
+				-webkit-backdrop-filter: blur(4px);
 				background-color: rgba(0,0,0,0.7);
 			}
 			&.hidden {
