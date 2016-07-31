@@ -27,11 +27,7 @@ mp4Controllers.controller('homeController', ['$scope' , '$window', '$document', 
 
   $('.thumb_nail_container').click(function(){
     var function_context = this;
-    $('.home').animate({
-      opacity: 0
-    }, 500, function(){
-      window.location = $(function_context).find("a").attr("href"); 
-    });
+    window.location = $(function_context).find("a").attr("href"); 
     return false;
   });
 
