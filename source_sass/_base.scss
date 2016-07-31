@@ -515,13 +515,17 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 						.thumb_nail_container {
 							background-image: url('../data/images/photographs.jpg');
 						}
-						padding-bottom: 30px;
+						@include breakpoint (large) {
+							padding-bottom: 20px;							
+						}
 					}
 					&:nth-child(8){
 						.thumb_nail_container {
 							background-image: url('../data/images/work_montage.png');
 						}
-						padding-bottom: 30px;
+						@include breakpoint (large) {
+							padding-bottom: 20px;							
+						}
 					}
 				}
 			}
