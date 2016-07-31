@@ -15,18 +15,14 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 	line-height: 35px;
 	color: black;
 	text-align: center;
-	h3{
-		font-family: $openSans;
-		color: #808080;
-		letter-spacing: 1px;
+	h2 {
+		font-family: 'Lemon Milk';
 		text-align: center;
-		margin-top: 5px;
-		font-weight: 300;
-		font-size: 20px;
-		@include breakpoint (large) {
-			font-size: 30px;
-		}
+		font-size: 25pt;
+		font-weight: 400;
+		color: #C5B358;
 	}
+	
 	a{
 		border-bottom: dotted 1px #aeaeae; 
 		color: #505050;
@@ -43,11 +39,25 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 		}
 	}
 	p{
-		margin-top: 20px;
+		// margin-top: 20px;
+		// color: #aeaeae;
+		// letter-spacing: 1px;
+		// font-weight: 300;
+		// font-size: 20px;
+		font-family: $openSans;
 		color: #aeaeae;
 		letter-spacing: 1px;
+		text-align: center;
+		margin-top: -10px;
+		margin-bottom: 5px;
 		font-weight: 300;
 		font-size: 20px;
+		@include breakpoint (large) {
+			font-size: 30px;
+		}
+		&.copyrights {
+			margin-top: 20px;
+		}
 	}
 }
 
@@ -350,7 +360,10 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 	.myworks {
 		width: 100%;
 		background-color: #f2f2f2;
-		padding: 40px 0;
+		padding: 40px 0 5px 0;
+		@include breakpoint (large) {
+			padding: 40px 0 30px 0;
+		}
 		.myworks_container{
 			overflow: hidden;
 			@include breakpoint(small only){
@@ -439,6 +452,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 						background-color: rgba(0,0,0,0.5);
 						background-blend-mode: overlay;
 						position: relative;
+						@include transition(all 0.5s ease-in-out);
 							h5{
 								@include transition(opacity 0.25s ease-in);
 								position: absolute;
@@ -478,7 +492,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 								letter-spacing: 0.8px;
 								color: white;
 								width: 90%;
-								font-size: 18px;
+								font-size: 20px;
 							} 
 					}
 					&:nth-child(1){
@@ -532,8 +546,10 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 		}
 	}
 
-	
-	
+	.myskills {
+		// height: 100vh;
+		// width: 100vw;
+	}
 }
 
 .apps {
