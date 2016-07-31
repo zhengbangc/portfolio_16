@@ -75,6 +75,11 @@ mp4Controllers.controller('homeController', ['$scope' , '$window', '$document', 
     top: '50%'
   }, 600);
 
+  $("nav").animate({
+    opacity: '1',
+    top: '58vh'
+  }, 600);
+
   $(document).scroll(function(){
     if($(document).scrollTop() >= 55 && $('nav').offset().top < $('.contactme').offset().top) {
       $('nav').addClass('background_blur');
