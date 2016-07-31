@@ -39,11 +39,6 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 		}
 	}
 	p{
-		// margin-top: 20px;
-		// color: #aeaeae;
-		// letter-spacing: 1px;
-		// font-weight: 300;
-		// font-size: 20px;
 		font-family: $openSans;
 		color: #aeaeae;
 		letter-spacing: 1px;
@@ -85,9 +80,6 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 			&.background_blur {
 				-webkit-backdrop-filter: blur(4px);
 				background-color: rgba(0,0,0,0.7);
-			}
-			&.hidden {
-				opacity: 0;
 			}
 		}
 		@include breakpoint(medium) {
