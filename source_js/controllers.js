@@ -71,7 +71,7 @@ mp4Controllers.controller('homeController', ['$scope' , '$window', '$document', 
     top: '50%'
   }, 600);
 
-  if($(window).width() > 1024) {
+  if($(window).width() > 800) {
     $("nav").animate({
       opacity: '1',
       top: '58vh'
