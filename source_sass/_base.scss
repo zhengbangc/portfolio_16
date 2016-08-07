@@ -8,7 +8,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 .contactme{
 	width: 100vw;
 	padding-top: 40px;
-	padding-bottom: 45px;
+	padding-bottom: 60px;
 	background-color: white;
 	font-family: $openSans;
 	font-weight: 300;
@@ -421,9 +421,9 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 						&:hover{
 							@include scale(1.03, 1.03);
 							.thumb_nail_container {
-								-webkit-box-shadow: 6px 10px 19px -5px rgba(0,0,0,0.75);
-								-moz-box-shadow: 6px 10px 19px -5px rgba(0,0,0,0.75);
-								box-shadow: 6px 10px 19px -5px rgba(0,0,0,0.75);
+								-webkit-box-shadow: 0 10px 19px -5px rgba(0,0,0,0.75);
+								-moz-box-shadow: 0 10px 19px -5px rgba(0,0,0,0.75);
+								box-shadow: 0 10px 19px -5px rgba(0,0,0,0.75);
 								background-color: rgba(0,0,0, 0.8);
 								h5{
 									@include breakpoint (large) {
