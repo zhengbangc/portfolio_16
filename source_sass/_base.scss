@@ -167,7 +167,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 			}
 			@include breakpoint (medium) {
 				position: fixed;
-				// will-change: transform;
+				will-change: transform;
 				@include linear-gradient-background();	
 			}
 			z-index: -1;		
@@ -390,6 +390,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 				content: '';
 				position: fixed;
 				z-index: -2;
+				will-change: transform;
 				@include linear-gradient-background();
 				top: 0;
 				left: 0;

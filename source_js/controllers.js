@@ -40,6 +40,18 @@ mp4Controllers.controller('homeController', ['$scope' , '$window', '$document', 
       top: nav_top
     }, 600); 
   }
+
+  $(window).resize(function() {
+    if ($(window).width() >= 500) {
+      var nav_top = $('.intro_container p').offset().top + 40 + 'px';
+      $('nav').css({top: nav_top});  
+    }
+    if($(window).width() < 500) {
+      $('nav').css({bottom: 0});
+      $('nav').css({top: 'auto'});
+    }
+  });
+
   // Text Rotator
   $('.rotate').each(function(){
     var el = $(this);
