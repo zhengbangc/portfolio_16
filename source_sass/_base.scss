@@ -390,7 +390,6 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 				content: '';
 				position: fixed;
 				z-index: -2;
-				
 				@include linear-gradient-background();
 				top: 0;
 				left: 0;
@@ -469,7 +468,6 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 									}
 								}
 								p{
-									@include transition(all 0.4s ease-in-out);
 									opacity: 1;
 								}
 							}
@@ -488,7 +486,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 						position: relative;
 						@include transition(all 0.5s ease-in-out);
 							h5{
-								@include transition(opacity 0.25s ease-in);
+								@include transition(opacity 0.2s ease-in);
 								position: absolute;
 								top: 50%;
 								@include translateY(-50%);
@@ -506,12 +504,12 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 								letter-spacing: 0.8px;
 							}
 							p{
+								@include transition(all 0.2s ease-in);
 								position: absolute;
 								top: 50%;
 								@include translateY(-50%);
 								left: 0;
 								right: 0;
-								@include transition(all 0.75s ease-out);
 								@include breakpoint(small){
 									display: none;
 								}
