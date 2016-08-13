@@ -462,10 +462,10 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 									font-size: 25px;
 									font-weight: 800;
 									letter-spacing: 2px;
+									color: #C5B358;
 								}
 								@include breakpoint(medium){
 									font-size: 32px;
-									color: #C5B358;
 								}
 								letter-spacing: 0.8px;
 							}
