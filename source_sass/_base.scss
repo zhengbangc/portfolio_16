@@ -456,16 +456,15 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 								@include translateY(-50%);
 								text-align: center;
 								width: 100%;
-								color: white;
+								font-family: $openSans;
 								@include breakpoint(small){
-									font-family: 'NMS';
-									font-size: 25px;
-									font-weight: 800;
-									letter-spacing: 2px;
-									color: #C5B358;
+									font-size: 22px;
+									letter-spacing: 1px;
+									color: #E8D572;
 								}
 								@include breakpoint(medium){
-									font-size: 32px;
+									font-size: 30px;
+									// color: #C5B358;
 								}
 								letter-spacing: 0.8px;
 							}
