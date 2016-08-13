@@ -69,3 +69,13 @@
 	background-position: center center;
 	background-size: cover;
 }
+
+@mixin section_header() {
+	font-family: 'NMS';
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	font-size: 25pt;
+	font-weight: 400;
+	color: #C5B358;
+}

@@ -5,6 +5,13 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 	src: url('../data/LemonMilk.otf') format("opentype");
 }
 
+@font-face {
+	font-family: 'NMS';
+	src: url('../data/geonms-webfont.ttf') format("opentype");
+}
+
+
+
 .contactme{
 	width: 100vw;
 	padding-top: 40px;
@@ -16,11 +23,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 	color: black;
 	text-align: center;
 	h2 {
-		font-family: 'Lemon Milk';
-		text-align: center;
-		font-size: 25pt;
-		font-weight: 400;
-		color: #C5B358;
+		@include section_header();
 	}
 	
 	a{
@@ -156,9 +159,11 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 			opacity: 0;
 			@include translateY(-50%);
 			h2 {
-				font-family: 'Lemon Milk', Helvetica, sans-serif;
+				font-family: 'NMS', Helvetica, sans-serif;
+				text-transform: uppercase;
 				letter-spacing: 4px;
 				font-size: 40px;
+				font-weight: 600;
 				@include breakpoint (medium) {
 					font-size: 65px;
 				}
@@ -220,10 +225,11 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 					text-align: right;
 			}
 			h2{
-				font-family: 'Lemon Milk', Helvetica, sans-serif;
-				font-weight: 500;
+				font-family: 'NMS', Helvetica, sans-serif;
+				text-transform: uppercase;
+				font-weight: 800;
 				color: #C5B358;
-				letter-spacing: 0.5px;
+				letter-spacing: 2px;
 				font-size: 25pt;
 				@include breakpoint(large) {
 					margin: 15px auto;
@@ -370,11 +376,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 				margin-right: auto;
 			}
 			h2 {
-				font-family: 'Lemon Milk';
-				text-align: center;
-				font-size: 25pt;
-				font-weight: 400;
-				color: #C5B358;
+				@include section_header();
 			}
 			p{
 				font-family: $openSans;
@@ -455,14 +457,15 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 								width: 100%;
 								color: white;
 								@include breakpoint(small){
+									font-family: 'NMS';
 									font-size: 25px;
-									font-weight: 600;
+									font-weight: 800;
+									letter-spacing: 2px;
 									color: #C5B358;
 								}
 								@include breakpoint(medium){
-									font-size: 25px;
+									font-size: 32px;
 								}
-								font-family: $openSans;
 								letter-spacing: 0.8px;
 							}
 							p{
