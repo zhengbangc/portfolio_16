@@ -2,7 +2,7 @@ var mp4Controllers = angular.module('mp4Controllers', ['duScroll']);
 
 mp4Controllers.controller('homeController', ['$scope' , '$window', '$document', function($scope, $window, $document) {
   $(document).scroll(function(){
-    if($(window).width() > 800) {
+    if($(window).width() > 500) {
       if($(window).scrollTop() >= ($('.myworks').offset().top - 300)){
         $('.thumb_nail:nth-child(1)').addClass('appear');
         setTimeout(function(){$('.thumb_nail:nth-child(2)').addClass('appear');},300);
@@ -33,7 +33,7 @@ mp4Controllers.controller('homeController', ['$scope' , '$window', '$document', 
     top: '50%'
   }, 600);
 
-  if($(window).width() > 800) {
+  if($(window).width() > 500) {
     var nav_top = $('.intro_container p').offset().top + 40 + 'px';
     $("nav").animate({
       opacity: '1',

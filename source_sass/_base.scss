@@ -290,6 +290,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 				width: 50%;
 				position: absolute;
 				padding-left: 2%;
+				padding-right:2%;
 				top: 50%;
 				@include translate(100%, -50%);
 			}
@@ -298,9 +299,6 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 				max-width: 400px;
 				@include breakpoint(small only) {
 					width: 330px;
-					margin: auto;
-				}
-				@include breakpoint(medium) {
 					margin: auto;
 				}
 				li{
@@ -464,12 +462,14 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 								box-shadow: 0 8px 19px -5px rgba(0,0,0,0.85);
 								background-color: rgba(0,0,0, 0.8);
 								h5{
-									@include breakpoint (medium) {
+									@include breakpoint (large) {
 										opacity: 0;										
 									}
 								}
 								p{
-									opacity: 1;
+									@include breakpoint (large) {
+										opacity: 1;
+									}
 								}
 							}
 						}
@@ -500,6 +500,9 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 									color: #E8D572;
 								}
 								@include breakpoint(medium){
+									font-size: 28px;
+								}
+								@include breakpoint(large) {
 									font-size: 30px;
 								}
 								letter-spacing: 0.8px;
@@ -516,6 +519,10 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 								}
 								@include breakpoint(medium){
 									display: block;
+									font-size: 16px;
+								}
+								@include breakpoint(large) {
+									font-size: 20px;
 								}
 								margin: auto;
 								opacity:0;
@@ -524,7 +531,6 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 								letter-spacing: 0.8px;
 								color: white;
 								width: 90%;
-								font-size: 20px;
 							} 
 					}
 					&:nth-child(1){
