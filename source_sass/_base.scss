@@ -30,7 +30,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 		border-bottom: dotted 1px #aeaeae; 
 		color: #505050;
 		font-size: 25px;
-		@include breakpoint(large) {
+		@include breakpoint(medium) {
 			font-size: 30px;
 		}
 		&:visited{
@@ -50,7 +50,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 		margin-bottom: 5px;
 		font-weight: 300;
 		font-size: 20px;
-		@include breakpoint (large) {
+		@include breakpoint (medium) {
 			font-size: 25px;
 		}
 		&.copyrights {
@@ -211,14 +211,14 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 		width: 100vw;
 		min-height: 80vh;
 		background-color: white;
-		@include breakpoint(large) {
+		@include breakpoint(medium) {
 			min-height: 100vh;
 		}
 		padding: 60px 0;
 		position: relative;
 		.aboutme_container{
 			width: 100%;
-			@include breakpoint(large){
+			@include breakpoint(medium){
 				width: 50%;
 				display: inline-block;
 				position: absolute;
@@ -234,14 +234,14 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 				margin-bottom: 20px;
 				margin-left: auto;
 				margin-right: auto;
-				@include breakpoint(large){
+				@include breakpoint(medium){
 					width: 330px;
 					border-radius: 6px;
 					margin-right: 0;
 				}
 			}
 			text-align: center;
-			@include breakpoint(large) {
+			@include breakpoint(medium) {
 					text-align: right;
 			}
 			h2{
@@ -251,7 +251,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 				color: #C5B358;
 				letter-spacing: 1px;
 				font-size: 25pt;
-				@include breakpoint(large) {
+				@include breakpoint(medium) {
 					margin: 15px auto;
 					font-size: 35px;
 					letter-spacing: 2px;
@@ -259,7 +259,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 			}
 			p{
 				font-size: 20px;
-				@include breakpoint(large){
+				@include breakpoint(medium){
 					font-size: 25px;
 				}
 				font-family: $openSans;
@@ -285,7 +285,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 			@include breakpoint (small only){
 				margin-top: 20px;				
 			}
-			@include breakpoint(large){
+			@include breakpoint(medium){
 				display: inline-block;
 				width: 50%;
 				position: absolute;
@@ -300,19 +300,19 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 					width: 330px;
 					margin: auto;
 				}
-				@include breakpoint(medium only) {
+				@include breakpoint(medium) {
 					margin: auto;
 				}
 				li{
 					cursor: pointer;
-					@include breakpoint(large) {
+					@include breakpoint(medium) {
 						margin-bottom: 20px;
 						&:hover{
 							h5{
 								@include transition(all 0.125s ease-in-out);
 								color: #C5B358;
 							}
-							@include breakpoint(large){
+							@include breakpoint(medium){
 								span.fa-angle-right{
 									@include translateX(5px);
 									@include transition(all 0.125s ease-in-out);
@@ -328,7 +328,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 						font-size: 18px;
 						color: #303030;
 						font-weight: 300;
-						@include breakpoint(large) {
+						@include breakpoint(medium) {
 							font-size: 25px;
 						}
 						&.extended {
@@ -379,7 +379,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 		width: 100%;
 		padding: 40px 0 5px 0;
 		position: relative;
-		@include breakpoint (large) {
+		@include breakpoint (medium) {
 			padding: 40px 0 30px 0;
 		}
 		@include breakpoint (small only) {
@@ -408,7 +408,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 				margin-bottom: 30px;
 				min-height: 80vh;
 			}
-			@include breakpoint(large){
+			@include breakpoint(medium){
 				width: 80vw;
 				margin-left: auto;
 				margin-right: auto;
@@ -425,7 +425,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 				margin-bottom: 30px;
 				font-weight: 300;
 				font-size: 20px;
-				@include breakpoint (large) {
+				@include breakpoint (medium) {
 					font-size: 30px;
 				}
 			}
@@ -561,7 +561,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 						.thumb_nail_container {
 							background-image: url('../data/images/photographs.jpg');
 						}
-						@include breakpoint (large) {
+						@include breakpoint (medium) {
 							padding-bottom: 20px;							
 						}
 					}
@@ -569,7 +569,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 						.thumb_nail_container {
 							background-image: url('../data/images/work_montage.png');
 						}
-						@include breakpoint (large) {
+						@include breakpoint (medium) {
 							padding-bottom: 20px;							
 						}
 					}
@@ -599,7 +599,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 			text-align: center;
 			font-weight: 300;
 			font-size: 20px;
-			@include breakpoint (large) {
+			@include breakpoint (medium) {
 				font-size: 30px;
 			}
 		}
@@ -678,7 +678,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 								font-size: 18px;
 								display: none;
 							}
-							@include breakpoint(medium only) {
+							@include breakpoint(medium) {
 								font-size: 18px;
 								display: none;
 							}
