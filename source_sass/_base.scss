@@ -229,11 +229,12 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 				text-transform: uppercase;
 				font-weight: 600;
 				color: #C5B358;
-				letter-spacing: 2px;
+				letter-spacing: 1px;
 				font-size: 25pt;
 				@include breakpoint(large) {
 					margin: 15px auto;
 					font-size: 35px;
+					letter-spacing: 2px;
 				}
 			}
 			p{
