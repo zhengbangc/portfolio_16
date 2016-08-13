@@ -81,6 +81,21 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 			bottom: 0;
 			@include transition(all 0.5s ease-in-out);
 			&.background_blur {
+				// &:before {
+				// 	content: '';
+				// 	width: 100%;
+				// 	height: 100%;
+				// 	left: 0;
+				// 	top: 0;
+				// 	position: absolute;
+				// 	background-color: rgba(0,0,0,0.4);
+				// 	-webkit-filter: blur(5px);
+				// 	-moz-filter: blur(5px);
+				// 	-o-filter: blur(5px);
+				// 	-ms-filter: blur(5px);
+				// 	filter: blur(5px);
+				// 	z-index: -1;
+				// }
 				-webkit-backdrop-filter: blur(4px);
 				background-color: rgba(0,0,0,0.7);
 			}
@@ -367,28 +382,25 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 		@include breakpoint (large) {
 			padding: 40px 0 30px 0;
 		}
-		&:before {
-			content: '';
-			position: fixed;
-			z-index: -2;
-			@include breakpoint (small only) {
-				@include linear-gradient-background-small();	
-				position: absolute;
-			}
-			@include breakpoint (medium) {
+		@include breakpoint (small only) {
+			background-color: #f9f9f9;
+		}
+		@include breakpoint (medium) {
+			&:before {
+				content: '';
 				position: fixed;
-				// will-change: transform;
-				@include linear-gradient-background();	
-			}	
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			-webkit-filter: blur(10px);
-			-moz-filter: blur(10px);
-			-o-filter: blur(10px);
-			-ms-filter: blur(10px);
-			filter: blur(10px);
+				z-index: -2;
+				@include linear-gradient-background();
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				-webkit-filter: blur(20px);
+				-moz-filter: blur(20px);
+				-o-filter: blur(20px);
+				-ms-filter: blur(20px);
+				filter: blur(20px);
+			}
 		}
 		.myworks_container{
 			overflow: hidden;
