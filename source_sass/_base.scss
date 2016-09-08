@@ -167,7 +167,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 			}
 			@include breakpoint (medium) {
 				position: fixed;
-				
+				will-change: transform;
 				@include linear-gradient-background();	
 			}
 			z-index: -1;		
@@ -212,7 +212,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 		min-height: 80vh;
 		background-color: white;
 		@include breakpoint(medium) {
-			min-height: 100vh;
+			min-height: 900px;
 		}
 		padding: 60px 0;
 		position: relative;
@@ -389,6 +389,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 				position: fixed;
 				z-index: -2;
 				@include linear-gradient-background();
+				will-change: transform;
 				top: 0;
 				left: 0;
 				width: 100%;
