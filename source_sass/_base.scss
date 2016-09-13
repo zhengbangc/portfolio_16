@@ -150,11 +150,6 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 		text-align: center;
 		color: white;
 		position: relative;
-		&.lower_intro_background_level {
-			&:before {
-				z-index: -2;
-			}
-		}
 		&:before {
 			content: '';
 			width: 100%;
@@ -212,7 +207,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 		min-height: 80vh;
 		background-color: white;
 		@include breakpoint(medium) {
-			min-height: 900px;
+			min-height: 840px;
 		}
 		padding: 60px 0;
 		position: relative;
