@@ -150,6 +150,11 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 		text-align: center;
 		color: white;
 		position: relative;
+		&.lower_intro_background_level {
+			&:before {
+				z-index: -3;
+			}
+		}
 		&:before {
 			content: '';
 			width: 100%;
@@ -387,13 +392,17 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 				will-change: transform;
 				top: 0;
 				left: 0;
+				margin: auto;
 				width: 100%;
 				height: 100%;
-				-webkit-filter: blur(20px);
-				-moz-filter: blur(20px);
-				-o-filter: blur(20px);
-				-ms-filter: blur(20px);
-				filter: blur(20px);
+				-webkit-filter: blur(5px);
+				-moz-filter: blur(5px);
+				-o-filter: blur(5px);
+				-ms-filter: blur(5px);
+				filter: blur(5px);
+				// -ms-transform: scale(1.20, 1.20); /* IE 9 */
+    			// -webkit-transform: scale(1.20, 1.20); /* Safari */
+    			// transform: scale(1.20, 1.20);
 			}
 		}
 		.myworks_container{
