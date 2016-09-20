@@ -12,6 +12,7 @@ mp4Controllers.controller('homeController', ['$scope' , '$window', '$document', 
         setTimeout(function(){$('.thumb_nail:nth-child(6)').addClass('appear');},1500);
         setTimeout(function(){$('.thumb_nail:nth-child(7)').addClass('appear');},1800);
         setTimeout(function(){$('.thumb_nail:nth-child(8)').addClass('appear');},2100);
+        setTimeout(function(){$('.thumb_nail:nth-child(9)').addClass('appear');},2400);
       }
       if($(window).scrollTop() >= $('.aboutme').offset().top) {
         $('.intro').addClass('lower_intro_background_level');

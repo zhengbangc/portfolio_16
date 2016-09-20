@@ -548,30 +548,35 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 					}
 					&:nth-child(2){
 						.thumb_nail_container {
-							background-image: url('../data/images/project_wayfair_match.png');
+							background-image: url('../data/images/eas_login.png');
 						}
 					}
 					&:nth-child(3){
 						.thumb_nail_container {
-							background-image: url('../data/images/project_sapphire.png');
+							background-image: url('../data/images/project_wayfair_match.png');
 						}
 					}
 					&:nth-child(4){
 						.thumb_nail_container {
-							background-image: url('../data/images/project_scheduler.png');
+							background-image: url('../data/images/project_sapphire.png');
 						}
 					}
 					&:nth-child(5){
 						.thumb_nail_container {
-							background-image: url('../data/images/project_zappos.png');
+							background-image: url('../data/images/project_scheduler.png');
 						}
 					}
 					&:nth-child(6){
 						.thumb_nail_container {
-							background-image: url('../data/images/golden.png');
+							background-image: url('../data/images/project_zappos.png');
 						}
 					}
 					&:nth-child(7){
+						.thumb_nail_container {
+							background-image: url('../data/images/golden.png');
+						}
+					}
+					&:nth-child(8){
 						.thumb_nail_container {
 							background-image: url('../data/images/photographs.jpg');
 						}
@@ -579,7 +584,7 @@ $openSans: 'Open Sans', Helvetica, sans-serif;
 							padding-bottom: 20px;							
 						}
 					}
-					&:nth-child(8){
+					&:nth-child(9){
 						.thumb_nail_container {
 							background-image: url('../data/images/work_montage.png');
 						}
