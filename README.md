@@ -1,10 +1,8 @@
-# Starter files for MP4
+# Zhengbang Chen's Personal Website
 
 ## Setup
 Use the following commands in your vagrant development environment to get this up and running
 ```
-git clone https://github.com/uiuc-web-programming/mp4_client_starter.git
-cd mp4_client_starter
 npm install
 bower install
 grunt compass
